@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	width: 960px;
+	height: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: grid;
+	box-sizing: border-box;
+	grid-template-columns:1fr 1fr 1fr ;
+	grid-template-rows:100px 50px 1fr 1fr 1fr ;
+}
+.nav{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+ol, ul {
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: gainsboro;
+}
+li{
+	float: left;
+}
+li a{
+	display: inline-block;
+	color: black;
+	text-align: center;
+	justify-content: space-between;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: futura-pt, sans-serif;
+	font-size: 1.1em;
+	font-weight: 500;
+	font-style: normal;
+}
+
+header{
+	font-family: alkaline,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3.5em;
+	text-shadow: 1px 2px 5px #0D93FF;
+	text-align: center;
+	padding-top: 10px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+body{
+}
+h1{
+	font-family: alkaline,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+}
+h1 .about{
+	float: left;
+}
+h2{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.7em;
+}
+h3{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1em;
+}
+h4{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 0.8em;
+}
+h5{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 0.6em;
+}
+h6{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 0.4em;
+}
+section{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	
+}
+div .background-img{
+	background-image: url("images/gold_beads.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	object-fit: cover;
+	width: 200px;
+	height: 100vh;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+p{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+.summary{
+	text-align: center;
+	font-size: 1.5em;
+	background-color: white;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: black;
+	font-family: futura-pt,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	position: absolute;
+	border: 10px solid #C9C9C9;
+  	border-radius: 1em;
+	padding: 8px;
+}
+.image{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	position: absolute;
+}
+.arrival-heading strong{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #1b1919;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 400px;
+    padding: 5px 30px;
+    border: 1px solid #e0e0e0;
+}
+.arrival-heading{
+	font-family: alkaline,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.arrival-heading strong{
+	grid-row-start: 3;
+    color: black;
+    background-color: gainsboro;
+    font-weight: 500;
+}
+.arrival-heading p{
+    color: black;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+.product-container{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.product-box{
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    margin: 20px;
+}
+.product-img{
+    width:200px;
+    height: 210px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.product-img img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid #f3f3f3;
+}
+.p-name{
+    color: black;
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+	
+}
+.p-price{
+    font-family: alkaline,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #333333;
+    font-size: 1.2rem;
+}
+.product-box:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.add-cart{
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: gainsboro;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	display: none;
+    animation: fade 0.3s;
+ 
+}
+.add-cart:hover{
+    background-color: #0D93FF;
+    transition: all ease 0.2s;
+}
+.product-box:hover .add-cart{
+    display: flex;
+}
+.new-arrival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	grid-row-start: 3;
+	grid-row-end: 8;
+}
+form{
+	color: black;
+	font-family: futura-pt,sans-serif;
+	font-weight: 500;
+	font-size: 1.1em;
+	font-style: normal;
+}
